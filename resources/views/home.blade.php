@@ -1,13 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>WPU Blog | Home</title>
-</head>
-<body>
+{{-- 
+    PATH atau lokasi nya relative terhadap folder `resources/views`
+    extends('folder.file_name') atau extends('folder/file_name') 
+--}}
+@extends('layouts.main') 
+
+@section('container')
     <h1>Halaman Home</h1>
-</body>
-</html>
+@endsection
