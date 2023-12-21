@@ -30,7 +30,7 @@ Route::get('/about', function () {
         "title" => "About",
         "name" => "Arman Dwi Pangestu",
         "email" => "armandwi.pangestu7@gmail.com",
-        "image" => "arman.jpg"
+        "image" => "me-circle.png"
     ]);
 });
 
