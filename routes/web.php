@@ -34,7 +34,7 @@ Route::get('/about', function () {
     ]);
 });
 
-Route::get('/blog', function () {
+Route::get('/posts', function () {
     $blog_post = [
         [
             'title' => 'Judul Post Pertama',
