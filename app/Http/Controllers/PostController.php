@@ -16,7 +16,8 @@ class PostController extends Controller
             //"posts" => Post::all()
 
             // Menggunakan expand class
-            "posts" => \App\Models\Post::all()
+            // "posts" => \App\Models\Post::all()
+            "posts" => \App\Models\Post::latest()->get()
         ]);
     }
 
