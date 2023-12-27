@@ -11,13 +11,13 @@ class PostController extends Controller
     public function index()
     {
         return view('posts', [
-            "title" => "Posts",
+            "title" => "All Posts",
             // Menggunakan use
             //"posts" => Post::all()
 
             // Menggunakan expand class
             // "posts" => \App\Models\Post::all()
-            "posts" => \App\Models\Post::latest()->get()
+            "posts" => \App\Models\Post::with(['author', 'category'])->latest()->get()
         ]);
     }
 

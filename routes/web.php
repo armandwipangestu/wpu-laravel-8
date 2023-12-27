@@ -41,11 +41,9 @@ Route::get('/about', function () {
 });
 
 Route::get('/posts', [PostController::class, 'index']);
-// Halaman Single Post
 Route::get('posts/{post:slug}', [PostController::class, 'show']);
 
 Route::get('/categories', [CategoryController::class, 'index']);
-
 Route::get('/categories/{category:slug}', [CategoryController::class, 'show']);
 
 Route::get('/authors', [AuthorController::class, 'index']);
