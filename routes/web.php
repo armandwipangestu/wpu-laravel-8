@@ -21,19 +21,21 @@ use App\Models\User;
 
 Route::get('/welcome', function () {
     return view('welcome', [
-        'title' => 'Welcome'
+        'title' => 'Welcome',
     ]);
 });
 
 Route::get('/', function () {
     return view('home', [
-        'title' => 'Home'
+        'title' => 'Home',
+        "active" => 'home'
     ]);
 });
 
 Route::get('/about', function () {
     return view('about', [
         "title" => "About",
+        "active" => "about",
         "name" => "Arman Dwi Pangestu",
         "email" => "armandwi.pangestu7@gmail.com",
         "image" => "me-circle.png"
