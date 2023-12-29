@@ -7,7 +7,7 @@
         <ul>
             <li>
                 <h2>
-                    <a href="/authors/{{ $author->username }}" class="text-decoration-none">{{ $author->name }}</a>
+                    <a href="/posts?author={{ $author->username }}" class="text-decoration-none">{{ $author->name }}</a>
                 </h2>
             </li>
         </ul>
