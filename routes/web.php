@@ -1,12 +1,10 @@
 <?php
 
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AuthController;
+use App\Http\Controllers\PostController;
 use App\Http\Controllers\AuthorController;
 use App\Http\Controllers\CategoryController;
-use App\Models\Post;
-use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\PostController;
-use App\Models\Category;
-use App\Models\User;
 
 /*
 |--------------------------------------------------------------------------
@@ -50,3 +48,6 @@ Route::get('/categories', [CategoryController::class, 'index']);
 
 Route::get('/authors', [AuthorController::class, 'index']);
 // Route::get('/authors/{author:username}', [AuthorController::class, 'show']);
+
+Route::get('/login', [AuthController::class, 'login']);
+Route::get('/register', [AuthController::class, 'register']);
